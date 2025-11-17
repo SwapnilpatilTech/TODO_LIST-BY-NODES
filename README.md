@@ -1,96 +1,35 @@
-# 🚀 **Todo Full-Stack App**
+# my-react-app
 
-A clean Full-Stack Todo application (Node.js + Express backend, React frontend) — perfect for a project submission video.
+Simple Vite + React todo app.
 
----
-## 🔧 Features
-- Create / Read / Update / Delete tasks  
-- React frontend with modern glass UI  
-- Simple Node.js API (in-memory; easy to switch to MongoDB)  
-- Ready for deployment (Render backend + Netlify frontend)
-<img width="1875" height="921" alt="members" src="https://github.com/SwapnilpatilTech/TODO_LIST-BY-NODES/blob/bff5d4cc35f03be3fb1e22222c926836886c58c6/Screenshot%202025-11-17%20161309.png" />
----<img width="1875" height="921" alt="members" src="https://github.com/SwapnilpatilTech/TODO_LIST-BY-NODES/blob/52ef246ee346cc01735d4354773388c024b77468/todo%20-%20Made%20with%20Clipchamp.gif" />
+Run locally
 
-## 🗂️ Folder Structure
-todo-fullstack/
-├─ backend/
-└─ frontend/
-
-yaml
-Copy code
-
----
-
-## ▶️ Quick start
-
-**Backend**
-```bash
-cd backend
+```powershell
+cd my-react-app
 npm install
 npm run dev
-Frontend (Vite)
+```
 
-bash
-Copy code
-cd frontend
-npm install
-npm run dev
-# open http://localhost:5173
-📦 Deploy
-Backend: Render or Railway (start: node server.js)
+API backend (optional)
 
-Frontend: Netlify or Vercel (build: npm run build)
-<img width="1875" height="921" alt="members" src="https://github.com/SwapnilpatilTech/TODO_LIST-BY-NODES/blob/52ef246ee346cc01735d4354773388c024b77468/todo%20-%20Made%20with%20Clipchamp.gif" />
+This project expects an API at `http://localhost:5000/api/todos`. You can start the simple included backend from the repo root:
 
-
-
-📦 3. Install Node Modules
-
-Open the terminal inside VS Code:
-
-npm install
-
-
-This installs:
-
-express
-
-cors
-
-▶️ 4. Start the Backend Server
-
-Run this command:
-
+```powershell
 node server.js
+```
+# React + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-If everything is correct, you will see:
+Currently, two official plugins are available:
 
-Server running on port 5000
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## React Compiler
 
-🎉 Your backend is now LIVE at:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-http://localhost:5000
+## Expanding the ESLint configuration
 
-🔍 5. Test API in Browser or Postman
-✔️ To get all todos
-
-Open browser and type:
-
-http://localhost:5000/api/todos
-
-
-You will get:
-
-[]
-
-✔️ To add a todo (use Postman)
-
-POST → http://localhost:5000/api/todos
-
-Body → JSON:
-
-{
-  "title": "Learn Node"
-}
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
