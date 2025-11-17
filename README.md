@@ -26,6 +26,11 @@ todo-backend/
 ✔ Express-based clean API
 ✔ In-memory data (no database — best for beginners)
 ✔ Fully tested with Postman
+<img src="https://github.com/SwapnilpatilTech/TODO_LIST-BY-NODES/blob/da77f6db26d5d2c9bb773d185ed2ce6b771f7e55/Screenshot%202025-11-17%20161309.png" width="100%" />
+
+
+<img src="https://github.com/SwapnilpatilTech/TODO_LIST-BY-NODES/blob/da77f6db26d5d2c9bb773d185ed2ce6b771f7e55/todo%20-%20Made%20with%20Clipchamp.gif" width="100%" />
+
 
 🔧 Technologies Used
 
