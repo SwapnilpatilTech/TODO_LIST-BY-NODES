@@ -37,9 +37,7 @@ CORS
 
 JSON-based API
 
-📦 Installation
-1️⃣ Clone the repository
-git clone https://github.com/YOUR-USERNAME/todo-backend.git
+
 
 2️⃣ Go inside the project folder
 cd todo-backend
