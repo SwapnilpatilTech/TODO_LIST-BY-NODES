@@ -1,35 +1,165 @@
-# my-react-app
+🌟 Todo List Backend (Node.js + Express)
 
-Simple Vite + React todo app.
+A simple and beginner-friendly Todo List REST API built using Node.js and Express.
+This project is perfect for learning backend basics, CRUD operations, API testing with Postman, and building full-stack applications.
 
-Run locally
+📁 Project Folder Structure
+todo-backend/
+│
+├── src/
+│   ├── controllers/
+│   │   └── todoController.js
+│   ├── routes/
+│   │   └── todoRoutes.js
+│   └── app.js
+│
+├── server.js
+├── package.json
+└── README.md
 
-```powershell
-cd my-react-app
+🚀 Features
+
+✔ Create Todo
+✔ Get All Todos
+✔ Update Todo (title / completed)
+✔ Delete Todo
+✔ Express-based clean API
+✔ In-memory data (no database — best for beginners)
+✔ Fully tested with Postman
+
+🔧 Technologies Used
+
+Node.js
+
+Express.js
+
+CORS
+
+JSON-based API
+
+📦 Installation
+1️⃣ Clone the repository
+git clone https://github.com/YOUR-USERNAME/todo-backend.git
+
+2️⃣ Go inside the project folder
+cd todo-backend
+
+3️⃣ Install dependencies
 npm install
-npm run dev
-```
 
-API backend (optional)
-
-This project expects an API at `http://localhost:5000/api/todos`. You can start the simple included backend from the repo root:
-
-```powershell
+4️⃣ Start the server
 node server.js
-```
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+You should see:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Server running on port 5000
 
-## React Compiler
+🌐 API Endpoints (Postman Testing Guide)
+📌 1. Get All Todos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+GET
 
-## Expanding the ESLint configuration
+http://localhost:5000/api/todos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Response Example:
+
+[]
+
+📌 2. Create a Todo
+
+POST
+
+http://localhost:5000/api/todos
+
+
+Body → JSON
+
+{
+  "title": "Learn Express"
+}
+
+
+Response:
+
+{
+  "id": 1,
+  "title": "Learn Express",
+  "completed": false
+}
+
+📌 3. Update a Todo
+
+PUT
+
+http://localhost:5000/api/todos/1
+
+
+Example Body:
+
+{
+  "completed": true
+}
+
+📌 4. Delete a Todo
+
+DELETE
+
+http://localhost:5000/api/todos/1
+
+
+Response:
+
+{
+  "message": "Todo deleted successfully!"
+}
+
+🎯 How It Works
+
+This backend uses an in-memory JavaScript array to store todos:
+
+let todos = [];
+let id = 1;
+
+
+✔ No database required
+✔ Perfect for beginners
+✔ Easy to understand CRUD flow
+✔ Great for video/project submissions
+
+🎥 Video Presentation Tips
+
+To make your project submission perfect:
+
+Start server (node server.js)
+
+Open Postman
+
+Show:
+
+Creating a todo
+
+Viewing all todos
+
+Updating a todo
+
+Deleting a todo
+
+Explain the folder structure
+
+Explain each endpoint briefly
+
+This will easily impress your teacher.
+
+⭐ Future Enhancements (Optional)
+
+(Only if you want to upgrade later)
+
+Add MongoDB database
+
+Connect with a frontend UI
+
+Add user authentication
+
+Deploy on Render / Railway
