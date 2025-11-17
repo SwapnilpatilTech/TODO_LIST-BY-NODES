@@ -41,3 +41,56 @@ Backend: Render or Railway (start: node server.js)
 
 Frontend: Netlify or Vercel (build: npm run build)
 <img width="1875" height="921" alt="members" src="https://github.com/SwapnilpatilTech/TODO_LIST-BY-NODES/blob/52ef246ee346cc01735d4354773388c024b77468/todo%20-%20Made%20with%20Clipchamp.gif" />
+
+
+
+📦 3. Install Node Modules
+
+Open the terminal inside VS Code:
+
+npm install
+
+
+This installs:
+
+express
+
+cors
+
+▶️ 4. Start the Backend Server
+
+Run this command:
+
+node server.js
+
+
+If everything is correct, you will see:
+
+Server running on port 5000
+
+
+🎉 Your backend is now LIVE at:
+
+http://localhost:5000
+
+🔍 5. Test API in Browser or Postman
+✔️ To get all todos
+
+Open browser and type:
+
+http://localhost:5000/api/todos
+
+
+You will get:
+
+[]
+
+✔️ To add a todo (use Postman)
+
+POST → http://localhost:5000/api/todos
+
+Body → JSON:
+
+{
+  "title": "Learn Node"
+}
