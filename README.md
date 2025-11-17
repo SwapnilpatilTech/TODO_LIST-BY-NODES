@@ -8,8 +8,7 @@ A clean Full-Stack Todo application (Node.js + Express backend, React frontend) 
 - React frontend with modern glass UI  
 - Simple Node.js API (in-memory; easy to switch to MongoDB)  
 - Ready for deployment (Render backend + Netlify frontend)
-<img width="1875" height="921" alt="members" src="
-https://github.com/SwapnilpatilTech/TODO_LIST-BY-NODES/blob/bff5d4cc35f03be3fb1e22222c926836886c58c6/Screenshot%202025-11-17%20161309.png" />
+<img width="1875" height="921" alt="members" src="https://github.com/SwapnilpatilTech/TODO_LIST-BY-NODES/blob/bff5d4cc35f03be3fb1e22222c926836886c58c6/Screenshot%202025-11-17%20161309.png" />
 ---<img width="1875" height="921" alt="members" src="https://github.com/SwapnilpatilTech/TODO_LIST-BY-NODES/blob/52ef246ee346cc01735d4354773388c024b77468/todo%20-%20Made%20with%20Clipchamp.gif" />
 
 ## 🗂️ Folder Structure
