@@ -166,3 +166,174 @@ Connect with a frontend UI
 Add user authentication
 
 Deploy on Render / Railway
+
+
+
+
+🌟 Todo List Backend (Node.js + Express)
+
+A simple and beginner-friendly Todo List REST API built using Node.js and Express.js.
+Perfect for learning backend basics, CRUD operations, Postman testing, and full-stack development.
+
+📁 Project Folder Structure
+todo-backend/
+│
+├── src/
+│   ├── controllers/
+│   │   └── todoController.js
+│   ├── routes/
+│   │   └── todoRoutes.js
+│   └── app.js
+│
+├── server.js
+├── package.json
+└── README.md
+
+🚀 Features
+
+✔ Create Todo
+✔ Get All Todos
+✔ Update Todo (title / completed)
+✔ Delete Todo
+✔ Clean Express API Structure
+✔ In-memory data storage (no database)
+✔ Fully testable with Postman
+
+🖼️ Screenshots
+<img src="https://github.com/SwapnilpatilTech/TODO_LIST-BY-NODES/blob/da77f6db26d5d2c9bb773d185ed2ce6b771f7e55/Screenshot%202025-11-17%20161309.png" width="100%" /> <img src="https://github.com/SwapnilpatilTech/TODO_LIST-BY-NODES/blob/da77f6db26d5d2c9bb773d185ed2ce6b771f7e55/todo%20-%20Made%20with%20Clipchamp.gif" width="100%" />
+🔧 Technologies Used
+
+Node.js
+
+Express.js
+
+CORS
+
+JSON-based REST API
+
+📦 Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/your-username/todo-backend.git
+
+2️⃣ Navigate into the project folder
+cd todo-backend
+
+3️⃣ Install dependencies
+npm install
+
+4️⃣ Start the server
+node server.js
+
+
+You should see:
+
+Server running on port 5000
+
+🌐 API Endpoints (Postman Guide)
+📌 1. Get All Todos
+
+GET
+
+http://localhost:5000/api/todos
+
+
+Response
+
+[]
+
+📌 2. Create a Todo
+
+POST
+
+http://localhost:5000/api/todos
+
+
+Body (JSON)
+
+{
+  "title": "Learn Express"
+}
+
+
+Response
+
+{
+  "id": 1,
+  "title": "Learn Express",
+  "completed": false
+}
+
+📌 3. Update a Todo
+
+PUT
+
+http://localhost:5000/api/todos/1
+
+
+Body Example
+
+{
+  "completed": true
+}
+
+📌 4. Delete a Todo
+
+DELETE
+
+http://localhost:5000/api/todos/1
+
+
+Response
+
+{
+  "message": "Todo deleted successfully!"
+}
+
+🎯 How It Works
+
+This backend uses an in-memory JavaScript array to store todos:
+
+let todos = [];
+let id = 1;
+
+
+✔ No database needed
+✔ Beginner-friendly
+✔ Clear CRUD logic
+✔ Great for assignments or video submissions
+
+🎥 Video Presentation Tips (For College / Practical Exam)
+
+To make your project presentation perfect:
+
+Start server (node server.js)
+
+Open Postman
+
+Show:
+
+Creating a new todo
+
+Viewing all todos
+
+Updating a todo
+
+Deleting a todo
+
+Explain folder structure
+
+Explain each endpoint briefly
+
+This will impress your teacher instantly.
+
+⭐ Future Enhancements (Optional)
+
+If you want to upgrade the project later:
+
+Add MongoDB / Mongoose
+
+Connect to a frontend UI
+
+Add user authentication (JWT)
+
+Deploy on Render / Railway
